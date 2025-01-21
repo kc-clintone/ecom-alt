@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova product registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="navbar">
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="brand" />
+      </div>
+      <ul class="menu">
+        <li><a href="#">dashboard</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+      <div class="mobile-menu">
+        <img src="assets/menu.png" alt="menu" />
+      </div>
+    </nav>
+   </header>
+  <main>
+  <div class="container">
+    <div class="hero">
+      <img src="assets/logo.png" alt="brand" />
+    </div>
+    <h1>Register Your Product</h1>
+    <form id="productForm">
+     <div class="cont">
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        <select id="productName" required>
+          <option value="">Select an option</option>
+          <option value="smartphone">Smartphone</option>
+          <option value="laptop">Laptop</option>
+          <option value="bridges">Bridges</option>
+	  <option value="walls">Walls</option>
+	  <option value="calculators">Calculators</option>
+	  <option value="buses">Buses</option>
+	  <option value="trains">Trains</option>
+	  <option value="wires">Wires</option>
+	  <option value="pumps">Pumps</option>
+	  <option value="steel">Steel</option>
+	  <option value="paints">Paints</option>
+	  <option value="brushes">Brushes</option>
+	  <option value="balls">Balls</option>
+	  <option value="trees">Trees</option>
+	  <option value="bread">Bread</option>
+	  <option value="chocolate">Chocolate</option>
+	  <option value="bowls">Bowls</option>
+	  <option value="socks">Socks</option>
+	  <option value="bulbs">Bulbs</option>
+	  <option value="necklaces">Necklaces</option>
+	  <option value="watches">Watches</option>
+	  <option value="marbles">Marbles</option>
+	  <option value="robots">Robots</option>
+	  <option value="bband">Bband</option>
+	  <option value="television">Television</option>
+	  <option value="paste">Paste</option>
+	  <option value="latte">Latte</option>
+	  <option value="tea">Tea</option>
+	  <option value="pizza">Pizza</option>
+	  <option value="crayon">Crayon</option>
+	  <option value="candle">Candle</option>
+	  <option value="dispenser">Dispenser</option>
+	  <option value="guitor">Guitor</option>
+        </select>
+        <small class="error-message" id="productNameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="serialNumber">Serial Number</label>
+        <input
+          type="text"
+          id="serialNumber"
+          maxlength="12"
+          placeholder="Example: Hy8P06KhlqJL"
+          required
+          class="form-control"
+        />
+        <small class="error-message" id="serialNumberError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="purchaseDate">Purchase Date</label>
+        <input type="date" id="purchaseDate" required class="form-control" placeholder="12/02/1999"/>
+        <small class="error-message" id="purchaseDateError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="customerName">Customer Name</label>
+        <input
+          type="text"
+          id="customerName"
+          placeholder="Michelle Njeri"
+          required
+          class="form-control"
+        />
+        <small class="error-message" id="customerNameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="example@email.com"
+          required
+          class="form-control"
+        />
+        <small class="error-message" id="emailError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="tel"
+          id="phoneNumber"
+          placeholder="Phone can be: 07xx xxx xxx"
+          required
+          class="form-control"
+        />
+        <small class="error-message" id="phoneNumberError"></small>
+      </div>
+
+      <div class="agree">
+        <input type="checkbox" id="terms" required class="check" />
+        <label>
+          By registering, I agree to the <span>terms</span> and <span>conditions</span> of nova
+        </label>
+        <small class="error-message" id="termsError"></small>
+      </div>
+     </div>
+      <button type="submit">Register Product</button>
+    </form>
+      <div class="success-box">
+        <p id="successMessage" class="success-message"></p>
+      </div>
+  </div>
+  </main>
+
+  <script src="script.js"></script>
+<footer>
+  <p>&copy; 2025 Nova. All Rights Reserved</p>
+</footer>
+</body>
+</html>

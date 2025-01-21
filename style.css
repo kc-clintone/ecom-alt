@@ -1,0 +1,221 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin: 28px 0 15px 0;
+  color: #333;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.logo {
+  width: 100px;
+  height: 30px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero {
+  width: 350px;
+  height: 80px;
+  margin: 5rem 0 auto;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  background-color: blue;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 400px;
+  max-width: 600px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control, select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.agree label {
+  padding-left: 15px;
+}
+
+.agree input {
+  margin-top: 8px;
+}
+
+.agree {
+  margin: 10px 0;
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+
+span {
+  font-size: bold;
+  color: violet;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: green;
+  font-size: 1.4rem;
+  margin-top: 5px; 
+}
+
+placeholder {
+  color: #ccc;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+  }
+  .menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+footer {
+  background-color: blue;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
